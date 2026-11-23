@@ -1,0 +1,8 @@
+# Ignore Node-only server, tests, and media during Vercel deployment
+server.js
+loader.js
+*.test.js
+HaqSetu_AI_Polished_Demo.mp4
+.vscode
+.codebenders
+.agent

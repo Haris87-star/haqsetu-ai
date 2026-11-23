@@ -85,6 +85,8 @@ async function handler(req, res) {
   }
 }
 
+export default handler;
+
 export function createServer() {
   return http.createServer((req, res) => {
     void handler(req, res);
