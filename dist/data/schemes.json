@@ -1,0 +1,1139 @@
+{
+  "_notice": "DEMO RECORDS for a hackathon prototype. These are NOT verified government data. Eligibility rules, benefit details and deadlines are demo placeholders and must be checked against official notifications before use.",
+  "schemes": [
+    {
+      "id": "demo-student-scholarship",
+      "name_en": "Demo Student Scholarship",
+      "name_kn": "ಡೆಮೊ ವಿದ್ಯಾರ್ಥಿ ವಿದ್ಯಾರ್ಥಿವೇತನ",
+      "kn_translation": "machine-drafted, needs native review",
+      "category": "Education",
+      "summary_en": "Demo placeholder for a scholarship for students from families with limited income.",
+      "summary_kn": "ಕಡಿಮೆ ಆದಾಯದ ಕುಟುಂಬಗಳ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ವಿದ್ಯಾರ್ಥಿವೇತನದ ಡೆಮೊ ಮಾದರಿ.",
+      "benefit_text_en": "Verify on official source",
+      "official_url": "https://www.nsp.gov.in",
+      "source_verified_on": null,
+      "verification_status": "UNVERIFIED — rules are demo placeholders; check official_url before relying on this",
+      "deadline": null,
+      "deadline_note": "No deadline published in this demo — check official source",
+      "is_demo": true,
+      "rules": [
+        {
+          "id": "is-student",
+          "field": "is_student",
+          "op": "truthy",
+          "value": null,
+          "label_en": "Currently a student (demo rule)",
+          "label_kn": "ಪ್ರಸ್ತುತ ವಿದ್ಯಾರ್ಥಿ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "वर्तमान में छात्र (डेमो नियम)",
+          "label_ta": "தற்போது மாணவர் (மாதிரி விதி)",
+          "label_te": "ప్రస్తుతం విద్యార్థి (నమూనా నియమం)",
+          "label_ml": "നിലവിൽ വിദ്യാർത്ഥി (മാതൃക നിയമം)",
+          "label_mr": "सध्या विद्यार्थी (नमुना नियम)"
+        },
+        {
+          "id": "education-level",
+          "field": "education",
+          "op": "in",
+          "value": [
+            "10th",
+            "12th",
+            "diploma",
+            "ITI",
+            "graduate"
+          ],
+          "label_en": "Education level: 10th or above (demo rule)",
+          "label_kn": "ಶಿಕ್ಷಣ ಮಟ್ಟ: 10ನೇ ತರಗತಿ ಅಥವಾ ಮೇಲ್ಪಟ್ಟು (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "शिक्षा: 10वीं या उससे ऊपर (डेमो नियम)",
+          "label_ta": "கல்வி: 10ஆம் வகுப்பு அல்லது அதற்கு மேல் (மாதிரி விதி)",
+          "label_te": "విద్య: 10వ తరగతి లేదా అంతకంటే ఎక్కువ (నమూనా నియమం)",
+          "label_ml": "വിദ്യാഭ്യാസം: പത്താം ക്ലാസ് അല്ലെങ്കിൽ അതിന് മുകളിൽ (മാതൃക നിയമം)",
+          "label_mr": "शिक्षण: दहावी किंवा त्यापुढे (नमुना नियम)"
+        },
+        {
+          "id": "income-limit",
+          "field": "annual_income",
+          "op": "lte",
+          "value": 250000,
+          "label_en": "Annual family income up to ₹2,50,000 (demo rule)",
+          "label_kn": "ವಾರ್ಷಿಕ ಕುಟುಂಬ ಆದಾಯ ₹2,50,000 ವರೆಗೆ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "वार्षिक पारिवारिक आय ₹2,50,000 तक (डेमो नियम)",
+          "label_ta": "ஆண்டு குடும்ப வருமானம் ₹2,50,000 வரை (மாதிரி விதி)",
+          "label_te": "వార్షిక కుటుంబ ఆదాయం ₹2,50,000 వరకు (నమూనా నియమం)",
+          "label_ml": "വാർഷിക കുടുംബ വരുമാനം ₹2,50,000 വരെ (മാതൃക നിയമം)",
+          "label_mr": "वार्षिक कौटुंबिक उत्पन्न ₹2,50,000 पर्यंत (नमुना नियम)"
+        },
+        {
+          "id": "category-priority",
+          "field": "caste_category",
+          "op": "in",
+          "value": [
+            "SC",
+            "ST",
+            "OBC"
+          ],
+          "label_en": "Priority category: SC, ST or OBC (demo rule)",
+          "label_kn": "ಆದ್ಯತಾ ವರ್ಗ: SC, ST ಅಥವಾ OBC (ಡೆಮೊ ನಿಯಮ)",
+          "required": false,
+          "label_hi": "प्राथमिकता वर्ग: SC, ST या OBC (डेमो नियम)",
+          "label_ta": "முன்னுரிமைப் பிரிவு: SC, ST அல்லது OBC (மாதிரி விதி)",
+          "label_te": "ప్రాధాన్య వర్గం: SC, ST లేదా OBC (నమూనా నియమం)",
+          "label_ml": "മുൻഗണന വിഭാഗം: SC, ST അല്ലെങ്കിൽ OBC (മാതൃക നിയമം)",
+          "label_mr": "प्राधान्य प्रवर्ग: SC, ST किंवा OBC (नमुना नियम)"
+        }
+      ],
+      "documents": [
+        {
+          "en": "Proof of identity (demo)",
+          "kn": "ಗುರುತಿನ ಪುರಾವೆ (ಡೆಮೊ)",
+          "hi": "पहचान का प्रमाण (डेमो)",
+          "ta": "அடையாளச் சான்று (மாதிரி)",
+          "te": "గుర్తింపు రుజువు (నమూనా)",
+          "ml": "തിരിച്ചറിയൽ രേഖ (മാതൃക)",
+          "mr": "ओळखीचा पुरावा (नमुना)"
+        },
+        {
+          "en": "Income certificate (demo)",
+          "kn": "ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ (ಡೆಮೊ)",
+          "hi": "आय प्रमाणपत्र (डेमो)",
+          "ta": "வருமானச் சான்றிதழ் (மாதிரி)",
+          "te": "ఆదాయ ధృవీకరణ పత్రం (నమూనా)",
+          "ml": "വരുമാന സർട്ടിഫിക്കറ്റ് (മാതൃക)",
+          "mr": "उत्पन्नाचा दाखला (नमुना)"
+        },
+        {
+          "en": "Latest mark sheet",
+          "kn": "ಇತ್ತೀಚಿನ ಅಂಕಪಟ್ಟಿ",
+          "hi": "नवीनतम अंकतालिका",
+          "ta": "சமீபத்திய மதிப்பெண் பட்டியல்",
+          "te": "తాజా మార్కుల జాబితా",
+          "ml": "ഏറ്റവും പുതിയ മാർക്ക് ലിസ്റ്റ്",
+          "mr": "नवीनतम गुणपत्रिका"
+        }
+      ],
+      "apply_steps_en": [
+        "Create an account on the official portal (demo step)",
+        "Fill in the application form",
+        "Upload the required documents",
+        "Submit and save the reference number"
+      ],
+      "tags": [
+        "student",
+        "scholarship",
+        "education"
+      ],
+      "name_hi": "डेमो छात्र छात्रवृत्ति",
+      "name_ta": "மாதிரி மாணவர் கல்வி உதவித்தொகை",
+      "name_te": "నమూనా విద్యార్థి ఉపకారవేతనం",
+      "name_ml": "മാതൃക വിദ്യാർത്ഥി സ്കോളർഷിപ്പ്",
+      "name_mr": "नमुना विद्यार्थी शिष्यवृत्ती",
+      "apply_steps_hi": [
+        "आधिकारिक पोर्टल पर खाता बनाएँ (डेमो चरण)",
+        "आवेदन पत्र भरें",
+        "आवश्यक दस्तावेज़ अपलोड करें",
+        "जमा करें और संदर्भ संख्या सुरक्षित रखें"
+      ],
+      "apply_steps_ta": [
+        "அதிகாரப்பூர்வ தளத்தில் கணக்கு தொடங்கவும் (மாதிரி படி)",
+        "விண்ணப்பப் படிவத்தை நிரப்பவும்",
+        "தேவையான ஆவணங்களைப் பதிவேற்றவும்",
+        "சமர்ப்பித்து குறிப்பு எண்ணைச் சேமிக்கவும்"
+      ],
+      "apply_steps_te": [
+        "అధికారిక పోర్టల్‌లో ఖాతా సృష్టించండి (నమూనా దశ)",
+        "దరఖాస్తు ఫారమ్ పూరించండి",
+        "అవసరమైన పత్రాలు అప్‌లోడ్ చేయండి",
+        "సమర్పించి రిఫరెన్స్ నంబర్ భద్రపరచండి"
+      ],
+      "apply_steps_ml": [
+        "ഔദ്യോഗിക പോർട്ടലിൽ അക്കൗണ്ട് സൃഷ്ടിക്കുക (മാതൃക ഘട്ടം)",
+        "അപേക്ഷാ ഫോം പൂരിപ്പിക്കുക",
+        "ആവശ്യമായ രേഖകൾ അപ്‌ലോഡ് ചെയ്യുക",
+        "സമർപ്പിച്ച് റഫറൻസ് നമ്പർ സൂക്ഷിക്കുക"
+      ],
+      "apply_steps_mr": [
+        "अधिकृत पोर्टलवर खाते तयार करा (नमुना पायरी)",
+        "अर्ज भरा",
+        "आवश्यक कागदपत्रे अपलोड करा",
+        "सबमिट करून संदर्भ क्रमांक जतन करा"
+      ]
+    },
+    {
+      "id": "demo-farmer-support",
+      "name_en": "Demo Farmer Support Scheme",
+      "name_kn": "ಡೆಮೊ ರೈತ ಬೆಂಬಲ ಯೋಜನೆ",
+      "kn_translation": "machine-drafted, needs native review",
+      "category": "Agriculture",
+      "summary_en": "Demo placeholder for income support for small farmers with agricultural land.",
+      "summary_kn": "ಕೃಷಿ ಭೂಮಿ ಹೊಂದಿರುವ ಸಣ್ಣ ರೈತರಿಗೆ ಆದಾಯ ಬೆಂಬಲದ ಡೆಮೊ ಮಾದರಿ.",
+      "benefit_text_en": "Verify on official source",
+      "official_url": null,
+      "source_verified_on": null,
+      "verification_status": "UNVERIFIED — rules are demo placeholders; check official_url before relying on this",
+      "deadline": null,
+      "deadline_note": "No deadline published in this demo — check official source",
+      "is_demo": true,
+      "rules": [
+        {
+          "id": "is-farmer",
+          "field": "occupation",
+          "op": "eq",
+          "value": "farmer",
+          "label_en": "Occupation: farmer (demo rule)",
+          "label_kn": "ಉದ್ಯೋಗ: ರೈತ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "व्यवसाय: किसान (डेमो नियम)",
+          "label_ta": "தொழில்: விவசாயி (மாதிரி விதி)",
+          "label_te": "వృత్తి: రైతు (నమూనా నియమం)",
+          "label_ml": "തൊഴിൽ: കർഷകൻ (മാതൃക നിയമം)",
+          "label_mr": "व्यवसाय: शेतकरी (नमुना नियम)"
+        },
+        {
+          "id": "land-min",
+          "field": "land_acres",
+          "op": "gte",
+          "value": 0.5,
+          "label_en": "Owns at least 0.5 acres (demo rule)",
+          "label_kn": "ಕನಿಷ್ಠ 0.5 ಎಕರೆ ಭೂಮಿ ಹೊಂದಿರಬೇಕು (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "कम से कम 0.5 एकड़ भूमि (डेमो नियम)",
+          "label_ta": "குறைந்தது 0.5 ஏக்கர் நிலம் (மாதிரி விதி)",
+          "label_te": "కనీసం 0.5 ఎకరాల భూమి (నమూనా నియమం)",
+          "label_ml": "കുറഞ്ഞത് 0.5 ഏക്കർ ഭൂമി (മാതൃക നിയമം)",
+          "label_mr": "किमान 0.5 एकर जमीन (नमुना नियम)"
+        },
+        {
+          "id": "rural-resident",
+          "field": "residence",
+          "op": "eq",
+          "value": "rural",
+          "label_en": "Lives in a rural area (demo rule)",
+          "label_kn": "ಗ್ರಾಮೀಣ ಪ್ರದೇಶದಲ್ಲಿ ವಾಸ (ಡೆಮೊ ನಿಯಮ)",
+          "required": false,
+          "label_hi": "ग्रामीण क्षेत्र में निवास (डेमो नियम)",
+          "label_ta": "கிராமப்புறத்தில் வசிப்பவர் (மாதிரி விதி)",
+          "label_te": "గ్రామీణ ప్రాంత నివాసి (నమూనా నియమం)",
+          "label_ml": "ഗ്രാമപ്രദേശത്ത് താമസം (മാതൃക നിയമം)",
+          "label_mr": "ग्रामीण भागात राहणारे (नमुना नियम)"
+        },
+        {
+          "id": "income-cap",
+          "field": "annual_income",
+          "op": "lte",
+          "value": 300000,
+          "label_en": "Annual income up to ₹3,00,000 (demo rule)",
+          "label_kn": "ವಾರ್ಷಿಕ ಆದಾಯ ₹3,00,000 ವರೆಗೆ (ಡೆಮೊ ನಿಯಮ)",
+          "required": false,
+          "label_hi": "वार्षिक आय ₹3,00,000 तक (डेमो नियम)",
+          "label_ta": "ஆண்டு வருமானம் ₹3,00,000 வரை (மாதிரி விதி)",
+          "label_te": "వార్షిక ఆదాయం ₹3,00,000 వరకు (నమూనా నియమం)",
+          "label_ml": "വാർഷിക വരുമാനം ₹3,00,000 വരെ (മാതൃക നിയമം)",
+          "label_mr": "वार्षिक उत्पन्न ₹3,00,000 पर्यंत (नमुना नियम)"
+        }
+      ],
+      "documents": [
+        {
+          "en": "Proof of identity (demo)",
+          "kn": "ಗುರುತಿನ ಪುರಾವೆ (ಡೆಮೊ)",
+          "hi": "पहचान का प्रमाण (डेमो)",
+          "ta": "அடையாளச் சான்று (மாதிரி)",
+          "te": "గుర్తింపు రుజువు (నమూనా)",
+          "ml": "തിരിച്ചറിയൽ രേഖ (മാതൃക)",
+          "mr": "ओळखीचा पुरावा (नमुना)"
+        },
+        {
+          "en": "Land records (demo)",
+          "kn": "ಭೂ ದಾಖಲೆಗಳು (ಡೆಮೊ)",
+          "hi": "भूमि अभिलेख (डेमो)",
+          "ta": "நில ஆவணங்கள் (மாதிரி)",
+          "te": "భూమి రికార్డులు (నమూనా)",
+          "ml": "ഭൂരേഖകൾ (മാതൃക)",
+          "mr": "जमिनीची कागदपत्रे (नमुना)"
+        },
+        {
+          "en": "Bank passbook",
+          "kn": "ಬ್ಯಾಂಕ್ ಪಾಸ್‌ಬುಕ್",
+          "hi": "बैंक पासबुक",
+          "ta": "வங்கி கணக்குப் புத்தகம்",
+          "te": "బ్యాంక్ పాస్‌బుక్",
+          "ml": "ബാങ്ക് പാസ്ബുക്ക്",
+          "mr": "बँक पासबुक"
+        }
+      ],
+      "apply_steps_en": [
+        "Visit the local agriculture office or official portal (demo step)",
+        "Fill in the application form",
+        "Attach land and identity documents",
+        "Submit and keep the acknowledgement"
+      ],
+      "tags": [
+        "farmer",
+        "agriculture",
+        "land"
+      ],
+      "name_hi": "डेमो किसान सहायता योजना",
+      "name_ta": "மாதிரி விவசாயிகள் ஆதரவுத் திட்டம்",
+      "name_te": "నమూనా రైతు సహాయ పథకం",
+      "name_ml": "മാതൃക കർഷക സഹായ പദ്ധതി",
+      "name_mr": "नमुना शेतकरी सहाय्य योजना",
+      "apply_steps_hi": [
+        "स्थानीय कृषि कार्यालय या आधिकारिक पोर्टल पर जाएँ (डेमो चरण)",
+        "आवेदन पत्र भरें",
+        "भूमि और पहचान दस्तावेज़ संलग्न करें",
+        "जमा करें और रसीद संभालकर रखें"
+      ],
+      "apply_steps_ta": [
+        "உள்ளூர் வேளாண் அலுவலகம் அல்லது அதிகாரப்பூர்வ தளத்திற்குச் செல்லவும் (மாதிரி படி)",
+        "விண்ணப்பப் படிவத்தை நிரப்பவும்",
+        "நிலம் மற்றும் அடையாள ஆவணங்களை இணைக்கவும்",
+        "சமர்ப்பித்து ஒப்புகைச் சீட்டை வைத்திருக்கவும்"
+      ],
+      "apply_steps_te": [
+        "స్థానిక వ్యవసాయ కార్యాలయం లేదా అధికారిక పోర్టల్‌కు వెళ్లండి (నమూనా దశ)",
+        "దరఖాస్తు ఫారమ్ పూరించండి",
+        "భూమి, గుర్తింపు పత్రాలు జతచేయండి",
+        "సమర్పించి రసీదును భద్రపరచండి"
+      ],
+      "apply_steps_ml": [
+        "പ്രാദേശിക കൃഷി ഓഫീസിലോ ഔദ്യോഗിക പോർട്ടലിലോ പോകുക (മാതൃക ഘട്ടം)",
+        "അപേക്ഷാ ഫോം പൂരിപ്പിക്കുക",
+        "ഭൂമിയുടെയും തിരിച്ചറിയലിന്റെയും രേഖകൾ ചേർക്കുക",
+        "സമർപ്പിച്ച് രസീത് സൂക്ഷിക്കുക"
+      ],
+      "apply_steps_mr": [
+        "स्थानिक कृषी कार्यालयात किंवा अधिकृत पोर्टलवर जा (नमुना पायरी)",
+        "अर्ज भरा",
+        "जमीन व ओळखपत्रे जोडा",
+        "अर्ज सादर करून पावती जपून ठेवा"
+      ]
+    },
+    {
+      "id": "demo-widow-pension",
+      "name_en": "Demo Widow Pension",
+      "name_kn": "ಡೆಮೊ ವಿಧವಾ ಪಿಂಚಣಿ",
+      "kn_translation": "machine-drafted, needs native review",
+      "category": "Social Security",
+      "summary_en": "Demo placeholder for a monthly pension for widows with low income.",
+      "summary_kn": "ಕಡಿಮೆ ಆದಾಯದ ವಿಧವೆಯರಿಗೆ ಮಾಸಿಕ ಪಿಂಚಣಿಯ ಡೆಮೊ ಮಾದರಿ.",
+      "benefit_text_en": "Verify on official source",
+      "official_url": null,
+      "source_verified_on": null,
+      "verification_status": "UNVERIFIED — rules are demo placeholders; check official_url before relying on this",
+      "deadline": null,
+      "deadline_note": "No deadline published in this demo — check official source",
+      "is_demo": true,
+      "rules": [
+        {
+          "id": "is-widow",
+          "field": "is_widow",
+          "op": "truthy",
+          "value": null,
+          "label_en": "Widowed (demo rule)",
+          "label_kn": "ವಿಧವೆ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "विधवा (डेमो नियम)",
+          "label_ta": "விதவை (மாதிரி விதி)",
+          "label_te": "వితంతువు (నమూనా నియమం)",
+          "label_ml": "വിധവ (മാതൃക നിയമം)",
+          "label_mr": "विधवा (नमुना नियम)"
+        },
+        {
+          "id": "age-min",
+          "field": "age",
+          "op": "gte",
+          "value": 60,
+          "label_en": "Age 60 or above (demo rule)",
+          "label_kn": "ವಯಸ್ಸು 60 ಅಥವಾ ಮೇಲ್ಪಟ್ಟು (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "आयु 60 वर्ष या अधिक (डेमो नियम)",
+          "label_ta": "வயது 60 அல்லது அதற்கு மேல் (மாதிரி விதி)",
+          "label_te": "వయస్సు 60 లేదా అంతకంటే ఎక్కువ (నమూనా నియమం)",
+          "label_ml": "പ്രായം 60 അല്ലെങ്കിൽ അതിൽ കൂടുതൽ (മാതൃക നിയമം)",
+          "label_mr": "वय 60 किंवा अधिक (नमुना नियम)"
+        },
+        {
+          "id": "income-cap",
+          "field": "annual_income",
+          "op": "lte",
+          "value": 200000,
+          "label_en": "Annual income up to ₹2,00,000 (demo rule)",
+          "label_kn": "ವಾರ್ಷಿಕ ಆದಾಯ ₹2,00,000 ವರೆಗೆ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "वार्षिक आय ₹2,00,000 तक (डेमो नियम)",
+          "label_ta": "ஆண்டு வருமானம் ₹2,00,000 வரை (மாதிரி விதி)",
+          "label_te": "వార్షిక ఆదాయం ₹2,00,000 వరకు (నమూనా నియమం)",
+          "label_ml": "വാർഷിക വരുമാനം ₹2,00,000 വരെ (മാതൃക നിയമം)",
+          "label_mr": "वार्षिक उत्पन्न ₹2,00,000 पर्यंत (नमुना नियम)"
+        },
+        {
+          "id": "bpl-card",
+          "field": "has_bpl_card",
+          "op": "truthy",
+          "value": null,
+          "label_en": "Holds a BPL card (demo rule)",
+          "label_kn": "ಬಿಪಿಎಲ್ ಕಾರ್ಡ್ ಹೊಂದಿರುವುದು (ಡೆಮೊ ನಿಯಮ)",
+          "required": false,
+          "label_hi": "बीपीएल कार्ड धारक (डेमो नियम)",
+          "label_ta": "பிபிஎல் அட்டை வைத்திருப்பவர் (மாதிரி விதி)",
+          "label_te": "బీపీఎల్ కార్డు కలిగి ఉన్నారు (నమూనా నియమం)",
+          "label_ml": "ബിപിഎൽ കാർഡ് കൈവശമുണ്ട് (മാതൃക നിയമം)",
+          "label_mr": "बीपीएल कार्डधारक (नमुना नियम)"
+        }
+      ],
+      "documents": [
+        {
+          "en": "Proof of identity (demo)",
+          "kn": "ಗುರುತಿನ ಪುರಾವೆ (ಡೆಮೊ)",
+          "hi": "पहचान का प्रमाण (डेमो)",
+          "ta": "அடையாளச் சான்று (மாதிரி)",
+          "te": "గుర్తింపు రుజువు (నమూనా)",
+          "ml": "തിരിച്ചറിയൽ രേഖ (മാതൃക)",
+          "mr": "ओळखीचा पुरावा (नमुना)"
+        },
+        {
+          "en": "Death certificate of spouse (demo)",
+          "kn": "ಪತಿಯ ಮರಣ ಪ್ರಮಾಣಪತ್ರ (ಡೆಮೊ)",
+          "hi": "जीवनसाथी का मृत्यु प्रमाणपत्र (डेमो)",
+          "ta": "துணைவரின் இறப்புச் சான்றிதழ் (மாதிரி)",
+          "te": "జీవిత భాగస్వామి మరణ ధృవీకరణ పత్రం (నమూనా)",
+          "ml": "ജീവിതപങ്കാളിയുടെ മരണ സർട്ടിഫിക്കറ്റ് (മാതൃക)",
+          "mr": "जोडीदाराचा मृत्यू दाखला (नमुना)"
+        },
+        {
+          "en": "Income certificate (demo)",
+          "kn": "ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ (ಡೆಮೊ)",
+          "hi": "आय प्रमाणपत्र (डेमो)",
+          "ta": "வருமானச் சான்றிதழ் (மாதிரி)",
+          "te": "ఆదాయ ధృవీకరణ పత్రం (నమూనా)",
+          "ml": "വരുമാന സർട്ടിഫിക്കറ്റ് (മാതൃക)",
+          "mr": "उत्पन्नाचा दाखला (नमुना)"
+        }
+      ],
+      "apply_steps_en": [
+        "Gather the required documents (demo step)",
+        "Visit the local office or official portal",
+        "Fill in the application form",
+        "Submit and note the acknowledgement number"
+      ],
+      "tags": [
+        "widow",
+        "pension",
+        "social security"
+      ],
+      "name_hi": "डेमो विधवा पेंशन",
+      "name_ta": "மாதிரி விதவை ஓய்வூதியம்",
+      "name_te": "నమూనా వితంతు పింఛను",
+      "name_ml": "മാതൃക വിധവാ പെൻഷൻ",
+      "name_mr": "नमुना विधवा निवृत्तीवेतन",
+      "apply_steps_hi": [
+        "आवश्यक दस्तावेज़ इकट्ठा करें (डेमो चरण)",
+        "स्थानीय कार्यालय या आधिकारिक पोर्टल पर जाएँ",
+        "आवेदन पत्र भरें",
+        "जमा करें और पावती संख्या नोट करें"
+      ],
+      "apply_steps_ta": [
+        "தேவையான ஆவணங்களைத் திரட்டவும் (மாதிரி படி)",
+        "உள்ளூர் அலுவலகம் அல்லது அதிகாரப்பூர்வ தளத்திற்குச் செல்லவும்",
+        "விண்ணப்பப் படிவத்தை நிரப்பவும்",
+        "சமர்ப்பித்து ஒப்புகை எண்ணைக் குறித்துக் கொள்ளவும்"
+      ],
+      "apply_steps_te": [
+        "అవసరమైన పత్రాలు సేకరించండి (నమూనా దశ)",
+        "స్థానిక కార్యాలయం లేదా అధికారిక పోర్టల్‌కు వెళ్లండి",
+        "దరఖాస్తు ఫారమ్ పూరించండి",
+        "సమర్పించి రసీదు నంబర్ నమోదు చేసుకోండి"
+      ],
+      "apply_steps_ml": [
+        "ആവശ്യമായ രേഖകൾ ശേഖരിക്കുക (മാതൃക ഘട്ടം)",
+        "പ്രാദേശിക ഓഫീസിലോ ഔദ്യോഗിക പോർട്ടലിലോ പോകുക",
+        "അപേക്ഷാ ഫോം പൂരിപ്പിക്കുക",
+        "സമർപ്പിച്ച് രസീത് നമ്പർ കുറിച്ചുവയ്ക്കുക"
+      ],
+      "apply_steps_mr": [
+        "आवश्यक कागदपत्रे गोळा करा (नमुना पायरी)",
+        "स्थानिक कार्यालयात किंवा अधिकृत पोर्टलवर जा",
+        "अर्ज भरा",
+        "अर्ज सादर करून पावती क्रमांक नोंदवा"
+      ]
+    },
+    {
+      "id": "demo-disability-pension",
+      "name_en": "Demo Disability Pension",
+      "name_kn": "ಡೆಮೊ ಅಂಗವಿಕಲರ ಪಿಂಚಣಿ",
+      "kn_translation": "machine-drafted, needs native review",
+      "category": "Disability",
+      "summary_en": "Demo placeholder for a monthly pension for persons with disability and low income.",
+      "summary_kn": "ಅಂಗವೈಕಲ್ಯ ಹೊಂದಿರುವ ಮತ್ತು ಕಡಿಮೆ ಆದಾಯದ ವ್ಯಕ್ತಿಗಳಿಗೆ ಮಾಸಿಕ ಪಿಂಚಣಿಯ ಡೆಮೊ ಮಾದರಿ.",
+      "benefit_text_en": "Verify on official source",
+      "official_url": null,
+      "source_verified_on": null,
+      "verification_status": "UNVERIFIED — rules are demo placeholders; check official_url before relying on this",
+      "deadline": null,
+      "deadline_note": "No deadline published in this demo — check official source",
+      "is_demo": true,
+      "rules": [
+        {
+          "id": "is-disabled",
+          "field": "is_disabled",
+          "op": "truthy",
+          "value": null,
+          "label_en": "Person with disability (demo rule)",
+          "label_kn": "ಅಂಗವೈಕಲ್ಯ ಹೊಂದಿರುವ ವ್ಯಕ್ತಿ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "दिव्यांग व्यक्ति (डेमो नियम)",
+          "label_ta": "மாற்றுத்திறனாளி (மாதிரி விதி)",
+          "label_te": "దివ్యాంగ వ్యక్తి (నమూనా నియమం)",
+          "label_ml": "ഭിന്നശേഷിയുള്ള വ്യക്തി (മാതൃക നിയമം)",
+          "label_mr": "दिव्यांग व्यक्ती (नमुना नियम)"
+        },
+        {
+          "id": "age-min",
+          "field": "age",
+          "op": "gte",
+          "value": 18,
+          "label_en": "Age 18 or above (demo rule)",
+          "label_kn": "ವಯಸ್ಸು 18 ಅಥವಾ ಮೇಲ್ಪಟ್ಟು (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "आयु 18 वर्ष या अधिक (डेमो नियम)",
+          "label_ta": "வயது 18 அல்லது அதற்கு மேல் (மாதிரி விதி)",
+          "label_te": "వయస్సు 18 లేదా అంతకంటే ఎక్కువ (నమూనా నియమం)",
+          "label_ml": "പ്രായം 18 അല്ലെങ്കിൽ അതിൽ കൂടുതൽ (മാതൃക നിയമം)",
+          "label_mr": "वय 18 किंवा अधिक (नमुना नियम)"
+        },
+        {
+          "id": "income-cap",
+          "field": "annual_income",
+          "op": "lte",
+          "value": 200000,
+          "label_en": "Annual income up to ₹2,00,000 (demo rule)",
+          "label_kn": "ವಾರ್ಷಿಕ ಆದಾಯ ₹2,00,000 ವರೆಗೆ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "वार्षिक आय ₹2,00,000 तक (डेमो नियम)",
+          "label_ta": "ஆண்டு வருமானம் ₹2,00,000 வரை (மாதிரி விதி)",
+          "label_te": "వార్షిక ఆదాయం ₹2,00,000 వరకు (నమూనా నియమం)",
+          "label_ml": "വാർഷിക വരുമാനം ₹2,00,000 വരെ (മാതൃക നിയമം)",
+          "label_mr": "वार्षिक उत्पन्न ₹2,00,000 पर्यंत (नमुना नियम)"
+        },
+        {
+          "id": "bpl-card",
+          "field": "has_bpl_card",
+          "op": "truthy",
+          "value": null,
+          "label_en": "Holds a BPL card (demo rule)",
+          "label_kn": "ಬಿಪಿಎಲ್ ಕಾರ್ಡ್ ಹೊಂದಿರುವುದು (ಡೆಮೊ ನಿಯಮ)",
+          "required": false,
+          "label_hi": "बीपीएल कार्ड धारक (डेमो नियम)",
+          "label_ta": "பிபிஎல் அட்டை வைத்திருப்பவர் (மாதிரி விதி)",
+          "label_te": "బీపీఎల్ కార్డు కలిగి ఉన్నారు (నమూనా నియమం)",
+          "label_ml": "ബിപിഎൽ കാർഡ് കൈവശമുണ്ട് (മാതൃക നിയമം)",
+          "label_mr": "बीपीएल कार्डधारक (नमुना नियम)"
+        }
+      ],
+      "documents": [
+        {
+          "en": "Proof of identity (demo)",
+          "kn": "ಗುರುತಿನ ಪುರಾವೆ (ಡೆಮೊ)",
+          "hi": "पहचान का प्रमाण (डेमो)",
+          "ta": "அடையாளச் சான்று (மாதிரி)",
+          "te": "గుర్తింపు రుజువు (నమూనా)",
+          "ml": "തിരിച്ചറിയൽ രേഖ (മാതൃക)",
+          "mr": "ओळखीचा पुरावा (नमुना)"
+        },
+        {
+          "en": "Disability certificate (demo)",
+          "kn": "ಅಂಗವೈಕಲ್ಯ ಪ್ರಮಾಣಪತ್ರ (ಡೆಮೊ)",
+          "hi": "दिव्यांगता प्रमाणपत्र (डेमो)",
+          "ta": "மாற்றுத்திறனாளி சான்றிதழ் (மாதிரி)",
+          "te": "వైకల్య ధృవీకరణ పత్రం (నమూనా)",
+          "ml": "ഭിന്നശേഷി സർട്ടിഫിക്കറ്റ് (മാതൃക)",
+          "mr": "दिव्यांगत्व प्रमाणपत्र (नमुना)"
+        },
+        {
+          "en": "Income certificate (demo)",
+          "kn": "ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ (ಡೆಮೊ)",
+          "hi": "आय प्रमाणपत्र (डेमो)",
+          "ta": "வருமானச் சான்றிதழ் (மாதிரி)",
+          "te": "ఆదాయ ధృవీకరణ పత్రం (నమూనా)",
+          "ml": "വരുമാന സർട്ടിഫിക്കറ്റ് (മാതൃക)",
+          "mr": "उत्पन्नाचा दाखला (नमुना)"
+        }
+      ],
+      "apply_steps_en": [
+        "Obtain a disability certificate (demo step)",
+        "Visit the local office or official portal",
+        "Fill in the application form",
+        "Submit and keep the acknowledgement"
+      ],
+      "tags": [
+        "disability",
+        "pension",
+        "divyang"
+      ],
+      "name_hi": "डेमो दिव्यांग पेंशन",
+      "name_ta": "மாதிரி மாற்றுத்திறனாளிகள் ஓய்வூதியம்",
+      "name_te": "నమూనా దివ్యాంగుల పింఛను",
+      "name_ml": "മാതൃക ഭിന്നശേഷി പെൻഷൻ",
+      "name_mr": "नमुना दिव्यांग निवृत्तीवेतन",
+      "apply_steps_hi": [
+        "दिव्यांगता प्रमाणपत्र प्राप्त करें (डेमो चरण)",
+        "स्थानीय कार्यालय या आधिकारिक पोर्टल पर जाएँ",
+        "आवेदन पत्र भरें",
+        "जमा करें और रसीद संभालकर रखें"
+      ],
+      "apply_steps_ta": [
+        "மாற்றுத்திறனாளி சான்றிதழ் பெறவும் (மாதிரி படி)",
+        "உள்ளூர் அலுவலகம் அல்லது அதிகாரப்பூர்வ தளத்திற்குச் செல்லவும்",
+        "விண்ணப்பப் படிவத்தை நிரப்பவும்",
+        "சமர்ப்பித்து ஒப்புகைச் சீட்டை வைத்திருக்கவும்"
+      ],
+      "apply_steps_te": [
+        "వైకల్య ధృవీకరణ పత్రం పొందండి (నమూనా దశ)",
+        "స్థానిక కార్యాలయం లేదా అధికారిక పోర్టల్‌కు వెళ్లండి",
+        "దరఖాస్తు ఫారమ్ పూరించండి",
+        "సమర్పించి రసీదును భద్రపరచండి"
+      ],
+      "apply_steps_ml": [
+        "ഭിന്നശേഷി സർട്ടിഫിക്കറ്റ് നേടുക (മാതൃക ഘട്ടം)",
+        "പ്രാദേശിക ഓഫീസിലോ ഔദ്യോഗിക പോർട്ടലിലോ പോകുക",
+        "അപേക്ഷാ ഫോം പൂരിപ്പിക്കുക",
+        "സമർപ്പിച്ച് രസീത് സൂക്ഷിക്കുക"
+      ],
+      "apply_steps_mr": [
+        "दिव्यांगत्व प्रमाणपत्र मिळवा (नमुना पायरी)",
+        "स्थानिक कार्यालयात किंवा अधिकृत पोर्टलवर जा",
+        "अर्ज भरा",
+        "अर्ज सादर करून पावती जपून ठेवा"
+      ]
+    },
+    {
+      "id": "demo-rural-housing",
+      "name_en": "Demo Rural Housing Support",
+      "name_kn": "ಡೆಮೊ ಗ್ರಾಮೀಣ ವಸತಿ ಬೆಂಬಲ",
+      "kn_translation": "machine-drafted, needs native review",
+      "category": "Housing",
+      "summary_en": "Demo placeholder for housing assistance for low-income rural households.",
+      "summary_kn": "ಕಡಿಮೆ ಆದಾಯದ ಗ್ರಾಮೀಣ ಕುಟುಂಬಗಳಿಗೆ ವಸತಿ ನೆರವಿನ ಡೆಮೊ ಮಾದರಿ.",
+      "benefit_text_en": "Verify on official source",
+      "official_url": "https://pmaymis.gov.in",
+      "source_verified_on": null,
+      "verification_status": "UNVERIFIED — rules are demo placeholders; check official_url before relying on this",
+      "deadline": null,
+      "deadline_note": "No deadline published in this demo — check official source",
+      "is_demo": true,
+      "rules": [
+        {
+          "id": "rural-resident",
+          "field": "residence",
+          "op": "eq",
+          "value": "rural",
+          "label_en": "Lives in a rural area (demo rule)",
+          "label_kn": "ಗ್ರಾಮೀಣ ಪ್ರದೇಶದಲ್ಲಿ ವಾಸ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "ग्रामीण क्षेत्र में निवास (डेमो नियम)",
+          "label_ta": "கிராமப்புறத்தில் வசிப்பவர் (மாதிரி விதி)",
+          "label_te": "గ్రామీణ ప్రాంత నివాసి (నమూనా నియమం)",
+          "label_ml": "ഗ്രാമപ്രദേശത്ത് താമസം (മാതൃക നിയമം)",
+          "label_mr": "ग्रामीण भागात राहणारे (नमुना नियम)"
+        },
+        {
+          "id": "income-cap",
+          "field": "annual_income",
+          "op": "lte",
+          "value": 150000,
+          "label_en": "Annual income up to ₹1,50,000 (demo rule)",
+          "label_kn": "ವಾರ್ಷಿಕ ಆದಾಯ ₹1,50,000 ವರೆಗೆ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "वार्षिक आय ₹1,50,000 तक (डेमो नियम)",
+          "label_ta": "ஆண்டு வருமானம் ₹1,50,000 வரை (மாதிரி விதி)",
+          "label_te": "వార్షిక ఆదాయం ₹1,50,000 వరకు (నమూనా నియమం)",
+          "label_ml": "വാർഷിക വരുമാനം ₹1,50,000 വരെ (മാതൃക നിയമം)",
+          "label_mr": "वार्षिक उत्पन्न ₹1,50,000 पर्यंत (नमुना नियम)"
+        },
+        {
+          "id": "bpl-card",
+          "field": "has_bpl_card",
+          "op": "truthy",
+          "value": null,
+          "label_en": "Holds a BPL card (demo rule)",
+          "label_kn": "ಬಿಪಿಎಲ್ ಕಾರ್ಡ್ ಹೊಂದಿರುವುದು (ಡೆಮೊ ನಿಯಮ)",
+          "required": false,
+          "label_hi": "बीपीएल कार्ड धारक (डेमो नियम)",
+          "label_ta": "பிபிஎல் அட்டை வைத்திருப்பவர் (மாதிரி விதி)",
+          "label_te": "బీపీఎల్ కార్డు కలిగి ఉన్నారు (నమూనా నియమం)",
+          "label_ml": "ബിപിഎൽ കാർഡ് കൈവശമുണ്ട് (മാതൃക നിയമം)",
+          "label_mr": "बीपीएल कार्डधारक (नमुना नियम)"
+        }
+      ],
+      "documents": [
+        {
+          "en": "Proof of identity (demo)",
+          "kn": "ಗುರುತಿನ ಪುರಾವೆ (ಡೆಮೊ)",
+          "hi": "पहचान का प्रमाण (डेमो)",
+          "ta": "அடையாளச் சான்று (மாதிரி)",
+          "te": "గుర్తింపు రుజువు (నమూనా)",
+          "ml": "തിരിച്ചറിയൽ രേഖ (മാതൃക)",
+          "mr": "ओळखीचा पुरावा (नमुना)"
+        },
+        {
+          "en": "Proof of residence (demo)",
+          "kn": "ವಾಸಸ್ಥಳದ ಪುರಾವೆ (ಡೆಮೊ)",
+          "hi": "निवास प्रमाण (डेमो)",
+          "ta": "வசிப்பிடச் சான்று (மாதிரி)",
+          "te": "నివాస రుజువు (నమూనా)",
+          "ml": "താമസ രേഖ (മാതൃക)",
+          "mr": "रहिवासाचा पुरावा (नमुना)"
+        },
+        {
+          "en": "Income certificate (demo)",
+          "kn": "ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ (ಡೆಮೊ)",
+          "hi": "आय प्रमाणपत्र (डेमो)",
+          "ta": "வருமானச் சான்றிதழ் (மாதிரி)",
+          "te": "ఆదాయ ధృవీకరణ పత్రం (నమూనా)",
+          "ml": "വരുമാന സർട്ടിഫിക്കറ്റ് (മാതൃക)",
+          "mr": "उत्पन्नाचा दाखला (नमुना)"
+        }
+      ],
+      "apply_steps_en": [
+        "Check the official portal for your village listing (demo step)",
+        "Fill in the application form",
+        "Upload identity and residence documents",
+        "Submit and save the reference number"
+      ],
+      "tags": [
+        "housing",
+        "rural",
+        "shelter"
+      ],
+      "name_hi": "डेमो ग्रामीण आवास सहायता",
+      "name_ta": "மாதிரி கிராமப்புற வீட்டு வசதி உதவி",
+      "name_te": "నమూనా గ్రామీణ గృహ సహాయం",
+      "name_ml": "മാതൃക ഗ്രാമീണ ഭവന സഹായം",
+      "name_mr": "नमुना ग्रामीण घरकुल सहाय्य",
+      "apply_steps_hi": [
+        "अपने गाँव की सूची आधिकारिक पोर्टल पर देखें (डेमो चरण)",
+        "आवेदन पत्र भरें",
+        "पहचान और निवास दस्तावेज़ अपलोड करें",
+        "जमा करें और संदर्भ संख्या सुरक्षित रखें"
+      ],
+      "apply_steps_ta": [
+        "உங்கள் கிராமப் பட்டியலை அதிகாரப்பூர்வ தளத்தில் பார்க்கவும் (மாதிரி படி)",
+        "விண்ணப்பப் படிவத்தை நிரப்பவும்",
+        "அடையாள மற்றும் வசிப்பிட ஆவணங்களைப் பதிவேற்றவும்",
+        "சமர்ப்பித்து குறிப்பு எண்ணைச் சேமிக்கவும்"
+      ],
+      "apply_steps_te": [
+        "మీ గ్రామ జాబితాను అధికారిక పోర్టల్‌లో చూడండి (నమూనా దశ)",
+        "దరఖాస్తు ఫారమ్ పూరించండి",
+        "గుర్తింపు, నివాస పత్రాలు అప్‌లోడ్ చేయండి",
+        "సమర్పించి రిఫరెన్స్ నంబర్ భద్రపరచండి"
+      ],
+      "apply_steps_ml": [
+        "നിങ്ങളുടെ ഗ്രാമത്തിന്റെ പട്ടിക ഔദ്യോഗിക പോർട്ടലിൽ പരിശോധിക്കുക (മാതൃക ഘട്ടം)",
+        "അപേക്ഷാ ഫോം പൂരിപ്പിക്കുക",
+        "തിരിച്ചറിയൽ, താമസ രേഖകൾ അപ്‌ലോഡ് ചെയ്യുക",
+        "സമർപ്പിച്ച് റഫറൻസ് നമ്പർ സൂക്ഷിക്കുക"
+      ],
+      "apply_steps_mr": [
+        "गावाची यादी अधिकृत पोर्टलवर तपासा (नमुना पायरी)",
+        "अर्ज भरा",
+        "ओळख व रहिवास कागदपत्रे अपलोड करा",
+        "सबमिट करून संदर्भ क्रमांक जतन करा"
+      ]
+    },
+    {
+      "id": "demo-health-cover",
+      "name_en": "Demo Health Insurance Cover",
+      "name_kn": "ಡೆಮೊ ಆರೋಗ್ಯ ವಿಮಾ ರಕ್ಷಣೆ",
+      "kn_translation": "machine-drafted, needs native review",
+      "category": "Health",
+      "summary_en": "Demo placeholder for hospital cover for low-income families.",
+      "summary_kn": "ಕಡಿಮೆ ಆದಾಯದ ಕುಟುಂಬಗಳಿಗೆ ಆಸ್ಪತ್ರೆ ರಕ್ಷಣೆಯ ಡೆಮೊ ಮಾದರಿ.",
+      "benefit_text_en": "Verify on official source",
+      "official_url": "https://pmjay.gov.in",
+      "source_verified_on": null,
+      "verification_status": "UNVERIFIED — rules are demo placeholders; check official_url before relying on this",
+      "deadline": null,
+      "deadline_note": "No deadline published in this demo — check official source",
+      "is_demo": true,
+      "rules": [
+        {
+          "id": "income-cap",
+          "field": "annual_income",
+          "op": "lte",
+          "value": 250000,
+          "label_en": "Annual income up to ₹2,50,000 (demo rule)",
+          "label_kn": "ವಾರ್ಷಿಕ ಆದಾಯ ₹2,50,000 ವರೆಗೆ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "वार्षिक आय ₹2,50,000 तक (डेमो नियम)",
+          "label_ta": "ஆண்டு வருமானம் ₹2,50,000 வரை (மாதிரி விதி)",
+          "label_te": "వార్షిక ఆదాయం ₹2,50,000 వరకు (నమూనా నియమం)",
+          "label_ml": "വാർഷిక വരുമാനം ₹2,50,000 വരെ (മാതൃക നിയമം)",
+          "label_mr": "वार्षिक उत्पन्न ₹2,50,000 पर्यंत (नमुना नियम)"
+        },
+        {
+          "id": "bpl-card",
+          "field": "has_bpl_card",
+          "op": "truthy",
+          "value": null,
+          "label_en": "Holds a BPL card (demo rule)",
+          "label_kn": "ಬಿಪಿಎಲ್ ಕಾರ್ಡ್ ಹೊಂದಿರುವುದು (ಡೆಮೊ ನಿಯಮ)",
+          "required": false,
+          "label_hi": "बीपीएल कार्ड धारक (डेमो नियम)",
+          "label_ta": "பிபிஎல் அட்டை வைத்திருப்பவர் (மாதிரி விதி)",
+          "label_te": "బీపీఎల్ కార్డు కలిగి ఉన్నారు (నమూనా నియమం)",
+          "label_ml": "ബിപിഎൽ കാർഡ് കൈവശമുണ്ട് (മാതൃക നിയമം)",
+          "label_mr": "बीपीएल कार्डधारक (नमुना नियम)"
+        }
+      ],
+      "documents": [
+        {
+          "en": "Proof of identity (demo)",
+          "kn": "ಗುರುತಿನ ಪುರಾವೆ (ಡೆಮೊ)",
+          "hi": "पहचान का प्रमाण (डेमो)",
+          "ta": "அடையாளச் சான்று (மாதிரி)",
+          "te": "గుర్తింపు రుజువు (నమూనా)",
+          "ml": "തിരിച്ചറിയൽ രേഖ (മാതൃക)",
+          "mr": "ओळखीचा पुरावा (नमुना)"
+        },
+        {
+          "en": "Ration or BPL card (demo)",
+          "kn": "ರೇಷನ್ ಅಥವಾ ಬಿಪಿಎಲ್ ಕಾರ್ಡ್ (ಡೆಮೊ)",
+          "hi": "राशन या बीपीएल कार्ड (डेमो)",
+          "ta": "ரேஷன் அல்லது பிபிஎல் அட்டை (மாதிரி)",
+          "te": "రేషన్ లేదా బీపీఎల్ కార్డు (నమూనా)",
+          "ml": "റേഷൻ അല്ലെങ്കിൽ ബിപിഎൽ കാർഡ് (മാതൃക)",
+          "mr": "रेशन किंवा बीपीएल कार्ड (नमुना)"
+        }
+      ],
+      "apply_steps_en": [
+        "Check eligibility on the official portal (demo step)",
+        "Visit an empanelled hospital or service centre",
+        "Carry identity and card documents",
+        "Complete enrolment and keep the receipt"
+      ],
+      "tags": [
+        "health",
+        "insurance",
+        "hospital"
+      ],
+      "name_hi": "डेमो स्वास्थ्य बीमा सुरक्षा",
+      "name_ta": "மாதிரி மருத்துவக் காப்பீட்டுப் பாதுகாப்பு",
+      "name_te": "నమూనా ఆరోగ్య బీమా రక్షణ",
+      "name_ml": "മാതൃക ആരോഗ്യ ഇൻഷുറൻസ് പരിരക്ഷ",
+      "name_mr": "नमुना आरोग्य विमा संरक्षण",
+      "apply_steps_hi": [
+        "आधिकारिक पोर्टल पर पात्रता जाँचें (डेमो चरण)",
+        "सूचीबद्ध अस्पताल या सेवा केंद्र जाएँ",
+        "पहचान और कार्ड के दस्तावेज़ साथ रखें",
+        "नामांकन पूरा करें और रसीद रखें"
+      ],
+      "apply_steps_ta": [
+        "அதிகாரப்பூர்வ தளத்தில் தகுதியைச் சரிபார்க்கவும் (மாதிரி படி)",
+        "பட்டியலிடப்பட்ட மருத்துவமனை அல்லது சேவை மையத்திற்குச் செல்லவும்",
+        "அடையாள மற்றும் அட்டை ஆவணங்களை எடுத்துச் செல்லவும்",
+        "பதிவை முடித்து ரசீதை வைத்திருக்கவும்"
+      ],
+      "apply_steps_te": [
+        "అధికారిక పోర్టల్‌లో అర్హత తనిఖీ చేయండి (నమూనా దశ)",
+        "జాబితాలోని ఆసుపత్రి లేదా సేవా కేంద్రానికి వెళ్లండి",
+        "గుర్తింపు, కార్డు పత్రాలు తీసుకెళ్లండి",
+        "నమోదు పూర్తి చేసి రసీదు భద్రపరచండి"
+      ],
+      "apply_steps_ml": [
+        "ഔദ്യോഗിക പോർട്ടലിൽ യോഗ്യത പരിശോധിക്കുക (മാതൃക ഘട്ടം)",
+        "പട്ടികയിലുള്ള ആശുപത്രിയിലോ സേവന കേന്ദ്രത്തിലോ പോകുക",
+        "തിരിച്ചറിയൽ, കാർഡ് രേഖകൾ കൊണ്ടുപോകുക",
+        "രജിസ്ട്രേഷൻ പൂർത്തിയാക്കി രസീത് സൂക്ഷിക്കുക"
+      ],
+      "apply_steps_mr": [
+        "अधिकृत पोर्टलवर पात्रता तपासा (नमुना पायरी)",
+        "नोंदणीकृत रुग्णालयात किंवा सेवा केंद्रात जा",
+        "ओळखपत्र व कार्डची कागदपत्रे सोबत ठेवा",
+        "नोंदणी पूर्ण करून पावती जपून ठेवा"
+      ]
+    },
+    {
+      "id": "demo-women-skilling",
+      "name_en": "Demo Women Skilling Programme",
+      "name_kn": "ಡೆಮೊ ಮಹಿಳಾ ಕೌಶಲ್ಯ ಕಾರ್ಯಕ್ರಮ",
+      "kn_translation": "machine-drafted, needs native review",
+      "category": "Employment",
+      "summary_en": "Demo placeholder for free skill training aimed at women seeking work.",
+      "summary_kn": "ಉದ್ಯೋಗ ಹುಡುಕುತ್ತಿರುವ ಮಹಿಳೆಯರಿಗಾಗಿ ಉಚಿತ ಕೌಶಲ್ಯ ತರಬೇತಿಯ ಡೆಮೊ ಮಾದರಿ.",
+      "benefit_text_en": "Verify on official source",
+      "official_url": null,
+      "source_verified_on": null,
+      "verification_status": "UNVERIFIED — rules are demo placeholders; check official_url before relying on this",
+      "deadline": null,
+      "deadline_note": "No deadline published in this demo — check official source",
+      "is_demo": true,
+      "rules": [
+        {
+          "id": "is-female",
+          "field": "gender",
+          "op": "eq",
+          "value": "female",
+          "label_en": "Gender: female (demo rule)",
+          "label_kn": "ಲಿಂಗ: ಮಹಿಳೆ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "लिंग: महिला (डेमो नियम)",
+          "label_ta": "பாலினம்: பெண் (மாதிரி விதி)",
+          "label_te": "లింగం: మహిళ (నమూనా నియమం)",
+          "label_ml": "ലിംഗം: സ്ത്രീ (മാതൃക നിയമം)",
+          "label_mr": "लिंग: महिला (नमुना नियम)"
+        },
+        {
+          "id": "age-range",
+          "field": "age",
+          "op": "between",
+          "value": [
+            18,
+            45
+          ],
+          "label_en": "Age between 18 and 45 (demo rule)",
+          "label_kn": "ವಯಸ್ಸು 18 ರಿಂದ 45 ರೊಳಗೆ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "आयु 18 से 45 वर्ष (डेमो नियम)",
+          "label_ta": "வயது 18 முதல் 45 வரை (மாதிரி விதி)",
+          "label_te": "వయస్సు 18 నుండి 45 వరకు (నమూనా నియమం)",
+          "label_ml": "പ്രായം 18 മുതൽ 45 വരെ (മാതൃക നിയമം)",
+          "label_mr": "वय 18 ते 45 वर्षे (नमुना नियम)"
+        },
+        {
+          "id": "education-level",
+          "field": "education",
+          "op": "in",
+          "value": [
+            "10th",
+            "12th",
+            "diploma",
+            "ITI",
+            "graduate",
+            "postgraduate"
+          ],
+          "label_en": "Education: 10th or above (demo rule)",
+          "label_kn": "ಶಿಕ್ಷಣ: 10ನೇ ತರಗತಿ ಅಥವಾ ಮೇಲ್ಪಟ್ಟು (ಡೆಮೊ ನಿಯಮ)",
+          "required": false,
+          "label_hi": "शिक्षा: 10वीं या उससे ऊपर (डेमो नियम)",
+          "label_ta": "கல்வி: 10ஆம் வகுப்பு அல்லது அதற்கு மேல் (மாதிரி விதி)",
+          "label_te": "విద్య: 10వ తరగతి లేదా అంతకంటే ఎక్కువ (నమూనా నియమం)",
+          "label_ml": "വിദ്യാഭ്യാസം: പത്താം ക്ലാസ് അല്ലെങ്കിൽ അതിന് മുകളിൽ (മാതൃക നിയമം)",
+          "label_mr": "शिक्षण: दहावी किंवा त्यापुढे (नमुना नियम)"
+        }
+      ],
+      "documents": [
+        {
+          "en": "Proof of identity (demo)",
+          "kn": "ಗುರುತಿನ ಪುರಾವೆ (ಡೆಮೊ)",
+          "hi": "पहचान का प्रमाण (डेमो)",
+          "ta": "அடையாளச் சான்று (மாதிரி)",
+          "te": "గుర్తింపు రుజువు (నమూనా)",
+          "ml": "തിരിച്ചറിയൽ രേഖ (മാതൃക)",
+          "mr": "ओळखीचा पुरावा (नमुना)"
+        },
+        {
+          "en": "Passport-size photograph",
+          "kn": "ಪಾಸ್‌ಪೋರ್ಟ್ ಅಳತೆಯ ಫೋಟೋ",
+          "hi": "पासपोर्ट आकार का फोटो",
+          "ta": "கடவுச்சீட்டு அளவுப் புகைப்படம்",
+          "te": "పాస్‌పోర్ట్ సైజు ఫోటో",
+          "ml": "പാസ്‌പോർട്ട് സൈസ് ഫോട്ടോ",
+          "mr": "पासपोर्ट आकाराचा फोटो"
+        }
+      ],
+      "apply_steps_en": [
+        "Register on the official portal or at a training centre (demo step)",
+        "Fill in the enrolment form",
+        "Attend the selection interview if called",
+        "Join the training batch"
+      ],
+      "tags": [
+        "women",
+        "skilling",
+        "training"
+      ],
+      "name_hi": "डेमो महिला कौशल प्रशिक्षण कार्यक्रम",
+      "name_ta": "மாதிரி பெண்கள் திறன் பயிற்சித் திட்டம்",
+      "name_te": "నమూనా మహిళల నైపుణ్య శిక్షణ కార్యక్రమం",
+      "name_ml": "മാതൃക വനിതാ നൈപുണ്യ പരിശീലന പരിപാടി",
+      "name_mr": "नमुना महिला कौशल्य प्रशिक्षण कार्यक्रम",
+      "apply_steps_hi": [
+        "आधिकारिक पोर्टल या प्रशिक्षण केंद्र में पंजीकरण करें (डेमो चरण)",
+        "नामांकन फॉर्म भरें",
+        "बुलाए जाने पर चयन साक्षात्कार में जाएँ",
+        "प्रशिक्षण बैच में शामिल हों"
+      ],
+      "apply_steps_ta": [
+        "அதிகாரப்பூர்வ தளம் அல்லது பயிற்சி மையத்தில் பதிவு செய்யவும் (மாதிரி படி)",
+        "பதிவுப் படிவத்தை நிரப்பவும்",
+        "அழைக்கப்பட்டால் தேர்வு நேர்காணலில் பங்கேற்கவும்",
+        "பயிற்சி குழுவில் சேரவும்"
+      ],
+      "apply_steps_te": [
+        "అధికారిక పోర్టల్ లేదా శిక్షణ కేంద్రంలో నమోదు చేసుకోండి (నమూనా దశ)",
+        "నమోదు ఫారమ్ పూరించండి",
+        "పిలిస్తే ఎంపిక ఇంటర్వ్యూకు హాజరుకండి",
+        "శిక్షణ బ్యాచ్‌లో చేరండి"
+      ],
+      "apply_steps_ml": [
+        "ഔദ്യോഗിക പോർട്ടലിലോ പരിശീലന കേന്ദ്രത്തിലോ രജിസ്റ്റർ ചെയ്യുക (മാതൃക ഘട്ടം)",
+        "രജിസ്ട്രേഷൻ ഫോം പൂരിപ്പിക്കുക",
+        "വിളിച്ചാൽ തിരഞ്ഞെടുപ്പ് അഭിമുഖത്തിൽ പങ്കെടുക്കുക",
+        "പരിശീലന ബാച്ചിൽ ചേരുക"
+      ],
+      "apply_steps_mr": [
+        "अधिकृत पोर्टलवर किंवा प्रशिक्षण केंद्रात नोंदणी करा (नमुना पायरी)",
+        "नोंदणी फॉर्म भरा",
+        "बोलावल्यास निवड मुलाखतीला उपस्थित राहा",
+        "प्रशिक्षण तुकडीत सहभागी व्हा"
+      ]
+    },
+    {
+      "id": "demo-youth-employment",
+      "name_en": "Demo Youth Employment Linkage",
+      "name_kn": "ಡೆಮೊ ಯುವ ಉದ್ಯೋಗ ಸಂಪರ್ಕ",
+      "kn_translation": "machine-drafted, needs native review",
+      "category": "Employment",
+      "summary_en": "Demo placeholder for job linkage and placement help for young job seekers.",
+      "summary_kn": "ಯುವ ಉದ್ಯೋಗಾಕಾಂಕ್ಷಿಗಳಿಗೆ ಉದ್ಯೋಗ ಸಂಪರ್ಕ ಮತ್ತು ನೆರವಿನ ಡೆಮೊ ಮಾದರಿ.",
+      "benefit_text_en": "Verify on official source",
+      "official_url": null,
+      "source_verified_on": null,
+      "verification_status": "UNVERIFIED — rules are demo placeholders; check official_url before relying on this",
+      "deadline": null,
+      "deadline_note": "No deadline published in this demo — check official source",
+      "is_demo": true,
+      "rules": [
+        {
+          "id": "age-range",
+          "field": "age",
+          "op": "between",
+          "value": [
+            18,
+            35
+          ],
+          "label_en": "Age between 18 and 35 (demo rule)",
+          "label_kn": "ವಯಸ್ಸು 18 ರಿಂದ 35 ರೊಳಗೆ (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "आयु 18 से 35 वर्ष (डेमो नियम)",
+          "label_ta": "வயது 18 முதல் 35 வரை (மாதிரி விதி)",
+          "label_te": "వయస్సు 18 నుండి 35 వరకు (నమూనా నియమం)",
+          "label_ml": "പ്രായം 18 മുതൽ 35 വരെ (മാതൃക നിയമം)",
+          "label_mr": "वय 18 ते 35 वर्षे (नमुना नियम)"
+        },
+        {
+          "id": "education-level",
+          "field": "education",
+          "op": "in",
+          "value": [
+            "10th",
+            "12th",
+            "diploma",
+            "ITI",
+            "graduate",
+            "postgraduate"
+          ],
+          "label_en": "Education: 10th or above (demo rule)",
+          "label_kn": "ಶಿಕ್ಷಣ: 10ನೇ ತರಗತಿ ಅಥವಾ ಮೇಲ್ಪಟ್ಟು (ಡೆಮೊ ನಿಯಮ)",
+          "required": true,
+          "label_hi": "शिक्षा: 10वीं या उससे ऊपर (डेमो नियम)",
+          "label_ta": "கல்வி: 10ஆம் வகுப்பு அல்லது அதற்கு மேல் (மாதிரி விதி)",
+          "label_te": "విద్య: 10వ తరగతి లేదా అంతకంటే ఎక్కువ (నమూనా నియమం)",
+          "label_ml": "വിദ്യാഭ്യാസം: പത്താം ക്ലാസ് അല്ലെങ്കിൽ അതിന് മുകളിൽ (മാതൃക നിയമം)",
+          "label_mr": "शिक्षण: दहावी किंवा त्यापुढे (नमुना नियम)"
+        },
+        {
+          "id": "income-cap",
+          "field": "annual_income",
+          "op": "lte",
+          "value": 300000,
+          "label_en": "Annual income up to ₹3,00,000 (demo rule)",
+          "label_kn": "ವಾರ್ಷಿಕ ಆದಾಯ ₹3,00,000 ವರೆಗೆ (ಡೆಮೊ ನಿಯಮ)",
+          "required": false,
+          "label_hi": "वार्षिक आय ₹3,00,000 तक (डेमो नियम)",
+          "label_ta": "ஆண்டு வருமானம் ₹3,00,000 வரை (மாதிரி விதி)",
+          "label_te": "వార్షిక ఆదాయం ₹3,00,000 వరకు (నమూనా నియమం)",
+          "label_ml": "വാർഷിക വരുമാനം ₹3,00,000 വരെ (മാതൃക നിയമം)",
+          "label_mr": "वार्षिक उत्पन्न ₹3,00,000 पर्यंत (नमुना नियम)"
+        }
+      ],
+      "documents": [
+        {
+          "en": "Proof of identity (demo)",
+          "kn": "ಗುರುತಿನ ಪುರಾವೆ (ಡೆಮೊ)",
+          "hi": "पहचान का प्रमाण (डेमो)",
+          "ta": "அடையாளச் சான்று (மாதிரி)",
+          "te": "గుర్తింపు రుజువు (నమూనా)",
+          "ml": "തിരിച്ചറിയൽ രേഖ (മാതൃക)",
+          "mr": "ओळखीचा पुरावा (नमुना)"
+        },
+        {
+          "en": "Latest mark sheet or certificate",
+          "kn": "ಇತ್ತೀಚಿನ ಅಂಕಪಟ್ಟಿ ಅಥವಾ ಪ್ರಮಾಣಪತ್ರ",
+          "hi": "नवीनतम अंकतालिका या प्रमाणपत्र",
+          "ta": "சமீபத்திய மதிப்பெண் பட்டியல் அல்லது சான்றிதழ்",
+          "te": "తాజా మార్కుల జాబితా లేదా సర్టిఫికేట్",
+          "ml": "ഏറ്റവും പുതിയ മാർക്ക് ലിസ്റ്റ് അല്ലെങ്കിൽ സർട്ടിഫിക്കറ്റ്",
+          "mr": "नवीनतम गुणपत्रिका किंवा प्रमाणपत्र"
+        },
+        {
+          "en": "Resume (optional)",
+          "kn": "ಬಯೋಡೇಟಾ (ಐಚ್ಛಿಕ)",
+          "hi": "बायोडाटा (वैकल्पिक)",
+          "ta": "சுயவிவரம் (விருப்பத்தேர்வு)",
+          "te": "రెజ్యూమ్ (ఐచ్ఛికం)",
+          "ml": "ബയോഡാറ്റ (ഐച്ഛികം)",
+          "mr": "बायोडाटा (ऐच्छिक)"
+        }
+      ],
+      "apply_steps_en": [
+        "Register on the official job portal (demo step)",
+        "Complete your profile and upload certificates",
+        "Apply to listed openings",
+        "Track responses in your dashboard"
+      ],
+      "tags": [
+        "youth",
+        "employment",
+        "jobs"
+      ],
+      "name_hi": "डेमो युवा रोजगार सहायता",
+      "name_ta": "மாதிரி இளைஞர் வேலைவாய்ப்பு உதவி",
+      "name_te": "నమూనా యువత ఉపాధి సహాయం",
+      "name_ml": "മാതൃക യുവജന തൊഴിൽ സഹായം",
+      "name_mr": "नमुना युवा रोजगार सहाय्य",
+      "apply_steps_hi": [
+        "आधिकारिक रोजगार पोर्टल पर पंजीकरण करें (डेमो चरण)",
+        "अपनी प्रोफ़ाइल पूरी करें और प्रमाणपत्र अपलोड करें",
+        "सूचीबद्ध नौकरियों के लिए आवेदन करें",
+        "डैशबोर्ड में जवाबों की स्थिति देखें"
+      ],
+      "apply_steps_ta": [
+        "அதிகாரப்பூர்வ வேலைவாய்ப்பு தளத்தில் பதிவு செய்யவும் (மாதிரி படி)",
+        "சுயவிவரத்தைப் பூர்த்தி செய்து சான்றிதழ்களைப் பதிவேற்றவும்",
+        "பட்டியலிடப்பட்ட வேலைகளுக்கு விண்ணப்பிக்கவும்",
+        "டாஷ்போர்டில் பதில்களைக் கண்காணிக்கவும்"
+      ],
+      "apply_steps_te": [
+        "అధికారిక ఉద్యోగ పోర్టల్‌లో నమోదు చేసుకోండి (నమూనా దశ)",
+        "ప్రొఫైల్ పూర్తి చేసి సర్టిఫికేట్లు అప్‌లోడ్ చేయండి",
+        "జాబితాలోని ఉద్యోగాలకు దరఖాస్తు చేయండి",
+        "డ్యాష్‌బోర్డ్‌లో స్పందనలు చూడండి"
+      ],
+      "apply_steps_ml": [
+        "ഔദ്യോഗിക തൊഴിൽ പോർട്ടലിൽ രജിസ്റ്റർ ചെയ്യുക (മാതൃക ഘട്ടം)",
+        "പ്രൊഫൈൽ പൂർത്തിയാക്കി സർട്ടിഫിക്കറ്റുകൾ അപ്‌ലോഡ് ചെയ്യുക",
+        "പട്ടികയിലുള്ള ഒഴിവുകൾക്ക് അപേക്ഷിക്കുക",
+        "ഡാഷ്ബോർഡിൽ പ്രതികരണങ്ങൾ പരിശോധിക്കുക"
+      ],
+      "apply_steps_mr": [
+        "अधिकृत रोजगार पोर्टलवर नोंदणी करा (नमुना पायरी)",
+        "प्रोफाइल पूर्ण करून प्रमाणपत्रे अपलोड करा",
+        "सूचीतील नोकऱ्यांसाठी अर्ज करा",
+        "डॅशबोर्डवर प्रतिसादांचा मागोवा घ्या"
+      ]
+    }
+  ]
+}

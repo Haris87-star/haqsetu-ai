@@ -1,0 +1,58 @@
+{
+  "_notice": "Fictional judge demo personas for the HaqSetu AI hackathon prototype. These people do not exist; they are for demonstration only and carry no real eligibility.",
+  "personas": [
+    {
+      "id": "persona-rural-student",
+      "name": "Lakshmi Gowda (fictional)",
+      "is_demo": true,
+      "description": "I'm 18 and live in a village near Mysuru in Karnataka with my parents and two brothers. My father works on a small farm and we earn about 1.2 lakh rupees a year. I just finished my 12th standard and want to continue to college, but fees are hard for us. I belong to a Scheduled Caste family and we have a BPL ration card.",
+      "profile": {
+        "age": 18,
+        "gender": "female",
+        "state": "Karnataka",
+        "residence": "rural",
+        "education": "12th",
+        "is_student": true,
+        "caste_category": "SC",
+        "annual_income": 120000,
+        "has_bpl_card": true,
+        "occupation": "student"
+      }
+    },
+    {
+      "id": "persona-urban-widow",
+      "name": "Savitha Rao (fictional)",
+      "is_demo": true,
+      "description": "I am 65 years old and live alone in an apartment in Bengaluru. My husband passed away three years ago and I have no regular job. I get a small income of about 1.5 lakh rupees a year from rent and help from my son. I hold a BPL card and I am a homemaker, and I am looking for a monthly pension I can rely on.",
+      "profile": {
+        "age": 65,
+        "gender": "female",
+        "state": "Karnataka",
+        "residence": "urban",
+        "education": "illiterate",
+        "is_widow": true,
+        "annual_income": 150000,
+        "has_bpl_card": true,
+        "occupation": "homemaker"
+      }
+    },
+    {
+      "id": "persona-disabled-youth",
+      "name": "Arjun Naik (fictional)",
+      "is_demo": true,
+      "description": "I am 24 and I use a wheelchair because of a polio-related disability. I have a graduate degree and run a small phone-repair shop in Mangaluru, which makes me self-employed. My shop earns me around 4.8 lakh rupees a year. I am male and I do not have a BPL card, and I want to know what support I can get for my work and health.",
+      "profile": {
+        "age": 24,
+        "gender": "male",
+        "state": "Karnataka",
+        "residence": "urban",
+        "education": "graduate",
+        "is_disabled": true,
+        "is_student": false,
+        "annual_income": 480000,
+        "has_bpl_card": false,
+        "occupation": "self-employed"
+      }
+    }
+  ]
+}
