@@ -1,5 +1,5 @@
-# Ignore Node-only server, tests, and media during Vercel deployment
-server.js
+# Exclude dev-only scripts, tests, and heavy media
+scripts/
 loader.js
 *.test.js
 HaqSetu_AI_Polished_Demo.mp4
