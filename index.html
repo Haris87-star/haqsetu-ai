@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="HaqSetu AI: transparent government scheme discovery demo with explainable eligibility matching in English and Kannada.">
+  <meta name="theme-color" content="#0b5c4a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>HaqSetu AI — Claim What's Yours</title>
+</head>
+<body>
+  <a class="skip-link" href="#app" data-i18n="skip">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">हक</span><span class="brand-text" data-i18n="appName">HaqSetu AI</span></div>
+    <div id="lang-slot"></div>
+    <nav id="nav" class="nav" aria-label="Main navigation"></nav>
+  </header>
+
+  <div class="demo-banner" role="note"><strong data-i18n="demoBannerTitle">Demo prototype</strong> <span data-i18n="demoBannerText">All scheme records and personas are fictional demo data, not verified government information.</span></div>
+
+  <main id="app" class="container" tabindex="-1">
+    <p class="loader" role="status" data-i18n="loading">Loading…</p>
+    <p id="data-error" role="alert" hidden></p>
+    <section class="discover panel" aria-labelledby="profile-heading">
+      <div class="section-intro"><span class="eyebrow" data-i18n="step1">STEP 01 · YOUR PROFILE</span><h1 id="profile-heading" data-i18n="profileTitle">Find support that fits your situation</h1><p class="muted" data-i18n="profileHelp">Describe your circumstances or try a fictional example. Review the extracted details before checking.</p></div>
+      <label for="story" data-i18n="storyLabel">Describe your situation</label>
+      <textarea id="story" rows="4"></textarea>
+      <div class="story-actions"><button id="voice" type="button" data-i18n="voice">Speak my story</button>
+      <button id="extract" type="button" data-i18n="extract">Understand my details</button></div>
+      <div class="profile-fields">
+      <label><span data-i18n="stateLabel">State</span> <input id="state" type="text" autocomplete="address-level1" placeholder="e.g. Karnataka" maxlength="60"></label>
+      <label><span data-i18n="ageLabel">Age</span> <input id="age" type="number" inputmode="numeric" min="0" max="120" placeholder="e.g. 18"></label>
+      <label><span data-i18n="incomeLabel">Annual income (₹)</span> <input id="income" type="number" inputmode="numeric" min="0" placeholder="e.g. 120000"></label>
+      <label><span data-i18n="levelLabel">Education level</span> <input id="level" type="text" maxlength="60" placeholder="e.g. 12th"></label>
+      </div>
+    </section>
+    <section class="demo-controls panel" aria-label="Eligibility actions"><div class="section-intro"><span class="eyebrow" data-i18n="step2">STEP 02 · EXPLORE</span><h2 data-i18n="exploreTitle">Try a demo or check your eligibility</h2></div>
+      <button id="tryDemo" type="button" class="primary" data-i18n="tryDemo">Try sample student</button>
+      <label><span data-i18n="personaLabel">Demo persona</span> <select id="persona"></select></label>
+      <button id="loadPersona" type="button" data-i18n="loadPersona">Load persona</button>
+      <button id="match" type="button" class="primary" data-i18n="checkEligibility">Check eligibility</button>
+      <button id="reset" type="button" data-i18n="erase">Erase saved demo data</button>
+      <label class="language-picker"><span class="sr-only">Choose language</span><select id="lang" aria-label="Choose language"><option value="en">English</option><option value="kn">ಕನ್ನಡ</option><option value="hi">हिन्दी</option><option value="ta">தமிழ்</option><option value="te">తెలుగు</option><option value="ml">മലയാളം</option><option value="mr">मराठी</option></select></label>
+    </section>
+    <section id="results" aria-live="polite" aria-label="Eligibility results"></section>
+    <section class="tracker-section" aria-labelledby="tracker-heading"><div class="section-intro"><span class="eyebrow" data-i18n="step3">STEP 03 · STAY ORGANISED</span><h2 id="tracker-heading" data-i18n="trackerTitle">Your application tracker</h2><p class="muted" data-i18n="trackerHelp">Track fictional demo applications and document readiness on this device.</p></div><div id="tracked"></div></section>
+    <div id="toast" role="status"></div>
+
+  </main>
+
+  <div id="live" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+  <footer class="site-footer">
+    <p data-i18n="footerText">HaqSetu AI is a hackathon prototype. Verify every scheme on its official government source before applying.</p>
+    <p><span data-i18n="realLinksIntro">To find real schemes, visit </span><a href="https://scholarships.gov.in/" target="_blank" rel="noopener" data-i18n="nsp">National Scholarship Portal</a> or <a href="https://sevasindhu.karnataka.gov.in/" target="_blank" rel="noopener" data-i18n="seva">Karnataka Seva Sindhu</a>.</p>
+    <p><button id="install" class="btn btn-secondary" type="button" hidden data-i18n="install">Install app</button></p>
+  </footer>
+
+  <noscript><p>JavaScript is required for this demo.</p></noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
